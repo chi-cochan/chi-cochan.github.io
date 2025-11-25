@@ -4,7 +4,12 @@ description: "就活向けポートフォリオ"
 baseurl: "" 
 url: "https://chi-cochan.github.io"
 
-theme: minimal-mistakes-jekyll
+# 既存の theme: minimal-mistakes-jekyll を削除して、代わりに
+remote_theme: "mmistakes/minimal-mistakes"
+
+plugins:
+  - jekyll-feed
+
 plugins:
   - jekyll-feed
 
