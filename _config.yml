@@ -1,26 +1,16 @@
-title: "あなたの名前"
-email: your@email.example
-description: "就活向けポートフォリオ"
-baseurl: "" 
+
+# 一時的な最小コンフィグ（公開用に簡略化）
+title: "chi-cochan"
+description: "就活向けポートフォリオ（仮）"
+baseurl: ""
 url: "https://chi-cochan.github.io"
 
-# 既存の theme: minimal-mistakes-jekyll を削除して、代わりに
-remote_theme: "mmistakes/minimal-mistakes"
+# 一時的にテーマ指定は外しています（ビルド安定化のため）
+# remote_theme: "mmistakes/minimal-mistakes"
 
-plugins:
-  - jekyll-feed
+# 必要なら plugins を最小にしておく
+plugins: []
 
-plugins:
-  - jekyll-feed
-
-# Minimal Mistakes
-minimal_mistakes_skin: "default"
-
-# ナビゲーション（トップのタブ風に使う）
-navigation:
-  - title: "作品紹介"
-    url: "/projects/"
-  - title: "自己紹介"
     url: "/about/"
   - title: "連絡先"
     url: "/contact/"
