@@ -1,0 +1,23 @@
+---
+---
+
+@import "minimal-mistakes";
+
+/* 水色テーマ */
+:root {
+  --link-color: #4DB6FF;
+  --primary: #6EC9FF;
+}
+
+/* ヘッダーやリンク */
+.site-header a, .site-footer a {
+  color: var(--link-color) !important;
+}
+
+/* ボタンのカスタム */
+a.button {
+  background: var(--primary) !important;
+  color: white !important;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+}
