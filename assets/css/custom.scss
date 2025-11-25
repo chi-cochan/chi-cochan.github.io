@@ -1,23 +1,55 @@
 ---
 ---
 
-@import "minimal-mistakes";
+/* テーマ依存の @import は削除済み — Minimal Mistakes がない環境でもビルド可 */
 
-/* 水色テーマ */
+/* 水色テーマのカスタム変数（ブラウザ互換のため :root を使う） */
 :root {
   --link-color: #4DB6FF;
   --primary: #6EC9FF;
+  --bg: #f7fbff;
+  --card-bg: #e6f4ff;
 }
 
-/* ヘッダーやリンク */
-.site-header a, .site-footer a {
-  color: var(--link-color) !important;
+/* 基本スタイル */
+html, body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  background: var(--bg);
+  color: #0b1220;
+  margin: 0;
+  padding: 0;
 }
 
-/* ボタンのカスタム */
-a.button {
-  background: var(--primary) !important;
-  color: white !important;
+/* コンテナ（カード） */
+.site-card, .card {
+  background: var(--card-bg);
+  padding: 1.6rem;
   border-radius: 12px;
-  padding: 0.5rem 1rem;
+  box-shadow: 0 6px 18px rgba(6,22,33,0.06);
+}
+
+/* リンク・ボタン */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a.button, a.btn {
+  display:inline-block;
+  padding:0.5rem 1rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ヘッダー等の余白調整（必要に応じて index.md 側で使う） */
+.header-title {
+  margin: 1.2rem 0;
+}
+
+/* レスポンシブ補助 */
+@media (max-width: 720px) {
+  .site-card { padding: 1rem; }
+  a.button { padding: .45rem .8rem; }
 }
