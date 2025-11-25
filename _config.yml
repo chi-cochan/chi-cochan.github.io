@@ -1,16 +1,10 @@
-
-# 一時的な最小コンフィグ（公開用に簡略化）
 title: "chi-cochan"
 description: "就活向けポートフォリオ（仮）"
 baseurl: ""
 url: "https://chi-cochan.github.io"
 
-# 一時的にテーマ指定は外しています（ビルド安定化のため）
+# テーマ指定は一時的に外しています（ビルド安定化のため）
 # remote_theme: "mmistakes/minimal-mistakes"
 
-# 必要なら plugins を最小にしておく
+# 最小プラグイン設定（空でOK）
 plugins: []
-
-    url: "/about/"
-  - title: "連絡先"
-    url: "/contact/"
