@@ -1,0 +1,21 @@
+title: "あなたの名前"
+email: your@email.example
+description: "就活向けポートフォリオ"
+baseurl: "" 
+url: "https://chi-cochan.github.io"
+
+theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-feed
+
+# Minimal Mistakes
+minimal_mistakes_skin: "default"
+
+# ナビゲーション（トップのタブ風に使う）
+navigation:
+  - title: "作品紹介"
+    url: "/projects/"
+  - title: "自己紹介"
+    url: "/about/"
+  - title: "連絡先"
+    url: "/contact/"
